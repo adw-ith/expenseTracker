@@ -11,13 +11,9 @@ const UnProtectedRoute: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     if (!loading && user) {
-      router.push("/protected");
+      router.push("/daily");
     }
   }, [user, loading, router]);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
   if (user) {
     return null;

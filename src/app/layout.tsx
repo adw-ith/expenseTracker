@@ -20,10 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <AuthProvider>
-      <html lang="en">
-        <ToastContainer />
-
-        <body className={inter.className}>{children}</body>
+      <html lang="en" className="bg-slate-900">
+        <body className={inter.className}>
+          <ToastContainer />
+          {children}
+        </body>
       </html>
     </AuthProvider>
   );

@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="date"] {
+  background-color: #374151; /* This is Tailwind's bg-slate-700 color */
+  color: white;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l5 1s infinite linear alternate;
+}
+.loader:after {
+  inset: auto 0 0 auto;
+  animation-delay: -1s;
+}
+@keyframes l5 {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 50px;
+  }
+}

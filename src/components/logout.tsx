@@ -24,7 +24,7 @@ export default function Logout() {
   return (
     <div>
       <button
-        className="px-4 rounded bg-red-500 hover:bg-transparent duration-300 border-2 border-red-500"
+        className="px-4 rounded bg-red-500 text-slate-300 hover:bg-transparent duration-300 border-2 border-red-500"
         onClick={handleLogout}
         disabled={loading}
       >

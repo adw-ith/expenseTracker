@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 export default function Home() {
   return (
     <UnProtectedRoute>
-      <main className="flex h-lvh bg-slate-900 min-h-screen flex-col place-content-center place-items-center">
+      <main className="flex h-lvh  min-h-screen flex-col place-content-center place-items-center">
         <Signup></Signup>
       </main>
     </UnProtectedRoute>
